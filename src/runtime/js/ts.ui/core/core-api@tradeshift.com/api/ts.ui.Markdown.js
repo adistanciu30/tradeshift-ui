@@ -257,18 +257,21 @@ ts.ui.Markdown = (function using(linkparser) {
 			if (line.indexOf('](') < 0) {
 				return line;
 			}
-			line = line.split('](').map(function(cut){
-				var normal = cut;
-				if (isnormaltext(cut)) {
-					var l = normal.lastIndexOf('[');
-					normal = normal.substr(0, l) + normal.substr(l).replace('[', '(');
-				}
-				if (isnormalurl(cut)) {
-					var f = normal.indexOf(')');
-					normal = normal.substr(0, f+1).replace(')', ']') + normal.substr(f+1);
-				}
-				return normal;
-			}).join(')[');
+			line = line
+				.split('](')
+				.map(function(cut) {
+					var normal = cut;
+					if (isnormaltext(cut)) {
+						var l = normal.lastIndexOf('[');
+						normal = normal.substr(0, l) + normal.substr(l).replace('[', '(');
+					}
+					if (isnormalurl(cut)) {
+						var f = normal.indexOf(')');
+						normal = normal.substr(0, f + 1).replace(')', ']') + normal.substr(f + 1);
+					}
+					return normal;
+				})
+				.join(')[');
 			return line;
 		}
 

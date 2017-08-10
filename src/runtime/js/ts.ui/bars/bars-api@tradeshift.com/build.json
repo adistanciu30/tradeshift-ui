@@ -1,9 +1,10 @@
 [
-	"models/bar/ts.ui.BarModel.js",
-	"models/toolbar/ts.ui.ToolBarModel.js",
-	"models/statusbar/ts.ui.StatusBarModel.js",
-	"models/topbar/ts.ui.TopBarModel.js",
-	"models/footer/ts.ui.FooterBarModel.js",
+	"models/local/bar/ts.ui.BarModel.js",
+	"models/local/toolbar/ts.ui.ToolBarModel.js",
+	"models/local/statusbar/ts.ui.StatusBarModel.js",
+	"models/local/topbar/ts.ui.TopBarModel.js",
+	"models/global/ts.ui.FooterBarModel.js",
+	"models/global/ts.ui.HeaderBarModel.js",
 	"api/ts.ui.TopBar.js",
 	"module.js"
 ]

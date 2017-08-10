@@ -1352,11 +1352,13 @@ ts.ui.TableSpirit = (function using(
 		 */
 		_selectpage: function(on) {
 			var page = this._model.visibleRows();
-			var idxs = page.filter(function(row) {
-				return row.selectable !== false;
-			}).map(function(row) {
-				return row.$index;
-			});
+			var idxs = page
+				.filter(function(row) {
+					return row.selectable !== false;
+				})
+				.map(function(row) {
+					return row.$index;
+				});
 			if (on === false) {
 				this.unselect(idxs);
 			} else {
