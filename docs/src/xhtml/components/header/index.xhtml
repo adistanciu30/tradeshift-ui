@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Header</title>
+	</head>
+	<body>
+		<header data-ts="TopBar"></header>
+		<main data-ts="Main">
+			<article>
+				<h1>Header</h1>
+				<section class="desc">
+					<p>Go go gadget Header.</p>
+				</section>
+				<section>
+					<figure data-ts="DoxScript" class="attention">
+						<script type="runnable">
+							ts.ui.Header.buttons([
+								{ label: 'Move Up', icon: 'ts-icon-triangleup' },
+								{ label: 'Move Down', icon: 'ts-icon-triangledown' },
+								{ label: 'Move Left', icon: 'ts-icon-triangleleft' },
+								{ label: 'Move Right', icon: 'ts-icon-triangleright' },
+								{ label: 'Don\'t Move', icon: 'ts-icon-halt', onclick: () => {
+									ts.ui.Header.buttons().clear();
+								}}
+							]);
+						</script>
+					</figure>
+				</section>
+			</article>
+		</main>
+	</body>
+<html>

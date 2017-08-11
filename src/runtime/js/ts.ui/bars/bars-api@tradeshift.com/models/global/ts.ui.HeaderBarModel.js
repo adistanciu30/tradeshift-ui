@@ -31,6 +31,16 @@ ts.ui.HeaderBarModel = (function(ToolBarModel) {
 		buttonbar: ToolBarModel,
 
 		/**
+		 * Initialize models.
+		 */
+		onconstruct: function() {
+			this.super.onconstruct();
+			this.headerbar = {};
+			this.centerbar = {};
+			this.buttonbar = {};
+		},
+
+		/**
 		 *
 		 */
 		title: {

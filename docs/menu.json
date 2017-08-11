@@ -54,7 +54,7 @@
 				"path": "components/asides/"
 			},
 			{
-				"label": "Bars",
+				"label": "Bars (DEPRECATED)",
 				"icon": "docs-icon-expand-horizontal-7",
 				"path": "components/bars/topbar.html"
 			},
@@ -87,6 +87,11 @@
 				"label": "Forms",
 				"icon": "docs-icon-pencil-fill",
 				"path": "components/forms/"
+			},
+			{
+				"label": "Header",
+				"icon": "docs-icon-video-games-space-invaders-1",
+				"path": "components/header/"
 			},
 			{
 				"label": "Icons",
